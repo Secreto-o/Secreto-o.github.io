@@ -1,0 +1,1654 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap');
+
+@keyframes sobe {
+    0%{top:100%}
+    100%{top:0%;}
+}
+@keyframes degrade {
+    0%{opacity:0%;}
+    100%{opacity: 100%;}
+}
+@keyframes triangulo {
+    0%{top:100%;}
+    100%{top:0%;}
+}
+@keyframes movita {
+    0%{top:0%;}
+    65%{top:-4%;}
+    100%{top:0%;}
+}
+@keyframes bambu1 {
+    0%{rotate: -45deg; right:84%; bottom: 14%;}
+    60%{rotate: 0deg; right: 0%; bottom: 0%;}
+    100%{rotate: -2deg; right: 4%; bottom: 0.1%;}
+}
+@keyframes bambu2 {
+    0%{rotate: 45deg; right:-84%; bottom: 1.4%;}
+    60%{rotate: 0deg; right: 0%; bottom: 0%;}
+    100%{rotate: 2deg; right: -4%; bottom: 0.1%;}
+}
+@keyframes balanca1 {
+    0%{rotate: -2deg; right: 4%; bottom: 0.1%;}
+    50%{rotate: 0deg; right: 0%; bottom: -1.4%;}
+    100%{rotate: -2deg; right: 4%; bottom: 0.1%;}
+}
+@keyframes balanca2 {
+    0%{rotate: 2deg; right: -4%; bottom: 0.1%;}
+    50%{rotate: 0deg; right: 0%; bottom: 0%;}
+    100%{rotate: 2deg; right: -4%; bottom: 0.1%;}
+}
+@keyframes azul {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+@keyframes panda1 {
+    0%{opacity: 100%;}
+    65%{opacity: 100%;}
+    65.01%{opacity: 0%;}
+    99%{opacity: 0%;}
+    99.01%{opacity: 100%;}
+    100%{opacity: 100%;}
+}
+@keyframes panda2 {
+    0%{opacity: 0%;}
+    65%{opacity: 0%;}
+    65.01%{opacity: 100%;}
+    99%{opacity: 100%;}
+    99.01%{opacity: 0%;}
+    100%{opacity: 0%;}
+}
+@keyframes botao {
+    0%{top:139.5%;}
+    100%{top:39.5%;}
+}
+@keyframes molha {
+    0%{opacity: 0%;}
+    99%{opacity: 0%;}
+    99.1%{opacity: 100%;}
+}
+@keyframes onda1 {
+    0%{right: 0%;}
+    50%{right: -28%;}
+    100%{right: 0%;}
+}
+@keyframes onda2 {
+    0%{right: -28%;}
+    50%{right: 0%;}
+    100%{right: -28%;}
+}
+
+@keyframes aparece {
+    0%{opacity: 0;}
+    100%{opacity: 100%;}
+}
+@keyframes some{
+    0%{opacity: 100%;}
+    100%{opacity: 0%;}
+}
+@keyframes cima {
+    0%{bottom: 40%;}
+    100%{bottom: 50%;}
+}
+@keyframes baixo {
+    0%{bottom: 50%;}
+    100%{bottom: 60%;}
+}
+
+body{
+    overflow: hidden;
+    background-color: white;
+    height: 720px;;
+    width: 360px;
+    margin: 0px;
+}
+.blu{
+    height: 100%;
+    width: 100%;
+}
+#panda{
+    top:100%;
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    animation-name: sobe, panda1;
+    animation-delay: 1s, 2.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-in-out, linear;
+    animation-fill-mode: forwards, forwards;
+    animation-iteration-count: 1, infinite;
+}
+#pata{
+    position: fixed;
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    animation-name: panda2;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+#bambu1{
+    position: fixed;
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    rotate: -45deg; 
+    right:0%; 
+    bottom: 14%;
+    animation-name: bambu1, balanca1, azul;
+    animation-delay: 2s, 3s, 2s;
+    animation-duration: 1s, 2s, 0.5s;
+    animation-timing-function: ease, ease-in-out, none;
+    animation-fill-mode: forwards, none, forwards;
+    animation-iteration-count: 1, infinite, 1;
+}
+#bambu2{
+    position: fixed;
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    rotate: 45deg;
+    right: -83%;
+    bottom: 1.4%;
+    animation-name: bambu2, balanca2, azul;
+    animation-delay: 2.5s, 3s, 2.5s;
+    animation-duration: 0.5s, 1.5s, 0.5s;
+    animation-timing-function: ease, ease-in-out, none;
+    animation-fill-mode: forwards, none, forwards;
+    animation-iteration-count: 1, infinite, 1;
+}
+#bambu3{
+    position: fixed;
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    rotate: 45deg;
+    right: -83%;
+    bottom: 1.4%;
+    animation-name: bambu2, balanca2, azul;
+    animation-delay: 2.25s, 2.75s, 2.25s;
+    animation-duration: 0.5s, 1.5s, 0.5s;
+    animation-timing-function: ease, ease-in-out, none;
+    animation-fill-mode: forwards, none, forwards;
+    animation-iteration-count: 1, infinite, 1;
+}
+#bolas{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -5;
+}
+#degrade{
+    position: fixed;
+    opacity: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -6;
+    animation-name: degrade;
+    animation-delay: 1.5s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+#triangulo1{
+    position: fixed;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    animation-name: triangulo, movita;
+    animation-delay: 1.5s, 2.5s;
+    animation-duration: 1s, 3s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-fill-mode: forwards, none;
+    animation-iteration-count: 1, infinite;
+}
+#triangulo2{
+    position: fixed;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation-name: triangulo, movita;
+    animation-delay: 1s, 2.5s;
+    animation-duration: 1.5s, 4s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-fill-mode: forwards, none;
+    animation-iteration-count: 1, infinite;
+}
+#triangulo3{
+    position: fixed;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    animation-name: triangulo, movita;
+    animation-delay: 0.5s, 2.5s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-fill-mode: forwards, none;
+    animation-duration: 2s, 3.5s;
+    animation-iteration-count: 1, infinite;
+}
+#triangulo4{
+    position: fixed;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    z-index: -3;
+    animation-name: triangulo, movita;
+    animation-delay: none, 2.5s;
+    animation-duration: 2.5s, 4.5s;
+    animation-timing-function: ease-out, ease-in-out;
+    animation-fill-mode: forwards, none;
+    animation-iteration-count: 1, infinite;
+}
+
+#button{
+    position: fixed;
+    top: 139.5%;
+    animation-name: botao;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    height: 17%;
+    width: 57%;
+    opacity: 0%;
+    left: 22%;
+}
+#vid{
+    left: -6%;
+    position: fixed;
+    height: 120%;
+    width: 120%;
+    z-index: 9;
+}
+.antes{
+    z-index: 10;
+}
+.depois{
+    z-index: -4;
+}
+.blu{
+    opacity: 0%;
+}
+.azul{
+    animation-name: molha;
+    animation-duration: 1.5s;
+    z-index: 3;
+}
+#fundo{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+#estrela1{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+#estrela2{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+#estrela3{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+#onda1{
+    position: fixed;
+    height: 100%;
+    width: 150%;
+    z-index: 5;
+}
+#onda2{
+    position: fixed;
+    height: 100%;
+    width: 150%;
+    z-index: 6;
+    right: -28%;
+}
+#onda3{
+    position: fixed;
+    height: 100%;
+    width: 150%;
+    z-index: 7;
+}
+#onda4{
+    position: fixed;
+    height: 100%;
+    width: 150%;
+    z-index: 8;
+    right: -28%;
+}
+#onda11{
+    position: fixed;
+    height: 100%;
+    width: 150%;
+    z-index: 8;
+    animation-name: onda1;
+    animation-timing-function: ease-in-out;
+    animation-direction: reverse;
+    animation-delay: 0.4s;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;  
+}
+#onda12{
+    position: fixed;
+    height: 100%;
+    width: 150%;
+    right: -28%;
+    z-index: 8;
+    animation-name: onda2;
+    animation-delay: 0.5s;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+}
+#onda13{
+    position: fixed;
+    height: 100%;
+    width: 150%;
+    z-index: 8;
+    animation-name: onda1;
+    animation-delay: 0.25s;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+#onda14{
+    position: fixed;
+    height: 100%;
+    width: 150%;
+    right: -28%;
+    z-index: 8;
+    animation-name: onda2;
+    animation-delay: 1.5s;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+#estrela11{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+#estrela12{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+#estrela13{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+}
+
+#amor{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#amorv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#vista{
+    letter-spacing: 1px;
+    opacity: 0;
+}
+#vistav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 3.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#acredito{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#acreditov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#refem{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#refemv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#inicio{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#iniciov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#chamam{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#chamamv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#paixao{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#paixaov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.6s, 5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#depois{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#depoisv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#irra{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#irrav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#sentia{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#sentiav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.6s, 5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#conti{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#contiv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#vive{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#vivev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#parte{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#partev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#esquece{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#esquecev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 3.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#ja{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#jav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#iludi{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#iludiv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 3.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6; 
+}
+#opostos{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#opostosv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#confunde{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#confundev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6; 
+}
+#duvida{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#duvidav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#causou{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#causouv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#atitude{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#atitudev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.6s, 5s;
+    animation-duration: 2s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#hoje{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#hojev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#algo{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#algov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 3.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6; 
+}
+#desistir{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#desistirv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#prosseguir{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#prosseguirv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 1.5s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6; 
+}
+#site{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#sitev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#alcance{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#alcancev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#forma{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#formav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#incrivel{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#incrivelv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#talvez{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#talvezv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#acho{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#achov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#tempo{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#tempov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.6s, 5s;
+    animation-duration: 2s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#alguem{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#alguemv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.9s, 5.2s;
+    animation-duration: 2s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#pessoa{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#pessoav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#especial{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#especialv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 3.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#certeza{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#certezav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#importante{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#importantev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#episodio{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#episodiov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.6s, 5s;
+    animation-duration: 2s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#vida{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#vidav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.9s, 5.2s;
+    animation-duration: 2s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#mais{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#maisv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#romance{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#romancev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#razao{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#razaov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.6s, 4.5s;
+    animation-duration: 2s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#capaz{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#capazv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#existe{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#existev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#sentimento{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#sentimentov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.6s, 4.5s;
+    animation-duration: 2s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#montei{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#monteiv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#todo{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#todov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 3.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#intencao{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#intencaov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#declarar{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#declararv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 3.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#afinal{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#afinalv{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#palavra{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#palavrav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#sinto{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#sintov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.6s, 4.5s;
+    animation-duration: 2s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#desse{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#dessev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#agradece{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#agradecev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 4.3s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#lembra{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#lembrav{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 1.1s, 4.5s;
+    animation-duration: 1.3s, 0.7s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#voce{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#vocev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 4s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#agatha{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#agathav{
+    font-size: 6vh;
+    text-shadow: 0.1em 0.1em 0.1em rgb(60, 106, 206);
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 1.1s, 4.3s;
+    animation-duration: 1.3s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#deixe{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#deixev{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+#contrario{
+    letter-spacing:1px;
+    opacity: 0;
+}
+#contrariov{
+    opacity: 0;
+    animation-name: aparece, some;
+    animation-delay: 0.3s, 3.8s;
+    animation-duration: 2s, 1s;
+    animation-timing-function: ease, ease;
+    animation-fill-mode: forwards, forwards;
+    z-index: 6;
+}
+
+.texto{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 3s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto2{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto3{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto4{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto5{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto6{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto7{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 3s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto8{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto9{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto10{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto11{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto12{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto13{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto14{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto15{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;
+}
+.texto16{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+.texto17{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+.texto18{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+.texto19{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+.texto20{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+.texto21{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+.texto22{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+.texto23{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 4s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+.texto24{
+    position: fixed;
+    height: fit-content;
+    width: 90%;
+    bottom: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    right: 5%;
+    z-index: 6;
+
+    animation-name: cima, baixo;
+    animation-delay: 0s, 3.5s;
+    animation-duration: 1.5s, 1s;
+    animation-timing-function: ease-out, ease-in;
+    animation-fill-mode: forwards, forwards;  
+}
+p{
+    color: white;
+    margin: 0;
+    font-family: "Cabin", sans-serif;
+    font-weight: 700;
+    font-size: 3.5vh;
+}
+#preto{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+#pretov{
+    position: fixed;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    animation-name: aparece;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    z-index: 13;
+}
+#adjhw{
+    position: fixed;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
