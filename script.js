@@ -68,7 +68,7 @@ const deixe = document.getElementById('deixe');
 const contrario = document.getElementById('contrario');
 const preto = document.getElementById('preto');
 const panda = document.getElementById('panda');
-const pata = document.getAnimations('pata');
+const pata = document.getElementById('pata');
 const bambu1 = document.getElementById('bambu1');
 const bambu2 = document.getElementById('bambu2');
 const bambu3 = document.getElementById('bambu3');
@@ -102,6 +102,7 @@ const t21 = document.getElementById('21');
 const t22 = document.getElementById('22');
 const t23 = document.getElementById('23');
 const t24 = document.getElementById('24');
+const nulo = document.getElementById('adjhw');
 
 var vid = document.getElementById('vid');
 
@@ -132,28 +133,19 @@ button.addEventListener('click', () => {
         estrela2.id = ('estrela12');
         estrela3.id = ('estrela13');
 
-        panda.remove();
-        panda.style.animation = 'none';
-        pata.remove();
-        pata.style.animation = 'none';
-        bambu1.remove();
-        bambu1.style.animation = 'none';
-        bambu2.remove();
-        bambu2.style.animation = 'none';
-        bambu3.remove();
-        bambu3.style.animation = 'none';
-        bolas.remove();
-        bolas.style.animation = 'none';
-        degrade.remove();
-        degrade.style.animation = 'none';
-        triangulo1.remove();
-        triangulo1.style.animation = 'none';
-        triangulo2.remove();
-        triangulo2.style.animation = 'none';
-        triangulo3.remove();
-        triangulo3.style.animation = 'none';
-        triangulo4.remove();
-        triangulo4.style.animation = 'none';
+        panda.id = ('adjhw');
+        pata.id = ('adjhw');
+        bambu1.id = ('adjhw');
+        bambu2.id = ('adjhw');
+        bambu3.id = ('adjhw');
+        bolas.id = ('adjhw');
+        degrade.id = ('adjhw');
+        triangulo1.id = ('adjhw');
+        triangulo2.id = ('adjhw');
+        triangulo3.id = ('adjhw');
+        triangulo4.id = ('adjhw');
+        nulo.remove();
+        
     }, 1500);
     setTimeout(function(){
         amor.id = ('amorv');
@@ -165,8 +157,9 @@ button.addEventListener('click', () => {
         refem.id = ('refemv');
         t2.classList.add('texto2');
 
-        document.getElementById('amorv').remove();
-        document.getElementById('vistav').remove();
+        document.getElementById('amorv').id = ('adjhw');
+        document.getElementById('vistav').id = ('adjhw');
+        nulo.remove();
     }, 8000);
     setTimeout(function(){
         inicio.id = ('iniciov');
@@ -180,42 +173,47 @@ button.addEventListener('click', () => {
         sentia.id = ('sentiav');
         t4.classList.add('texto4');
 
-        document.getElementById('acreditov').remove();
-        document.getElementById('refemv').remove();
+        document.getElementById('acreditov').id = ('adjhw');
+        document.getElementById('refemv').id = ('adjhw');
+        nulo.remove();
     }, 19000);
     setTimeout(function(){
         conti.id = ('contiv');
         vive.id = ('vivev');
         t5.classList.add('texto5');
 
-        document.getElementById('iniciov').remove();
-        document.getElementById('chamamv').remove();
-        document.getElementById('paixaov').remove();
+        document.getElementById('iniciov').id = ('adjhw');
+        document.getElementById('chamamv').id = ('adjhw');
+        document.getElementById('paixaov').id = ('adjhw');
+        nulo.remove();
     }, 23900);
     setTimeout(function(){
         parte.id = ('partev');
         esquece.id = ('esquecev');
         t6.classList.add('texto6')
         
-        document.getElementById('depoisv').remove();
-        document.getElementById('irrav').remove();
-        document.getElementById('sentiav').remove();
+        document.getElementById('depoisv').id = ('adjhw');
+        document.getElementById('irrav').id = ('adjhw');
+        document.getElementById('sentiav').id = ('adjhw');
+        nulo.remove();
     }, 29000);
     setTimeout(function(){
         ja.id = ('jav');
         iludi.id = ('iludiv');
         t7.classList.add('texto7');
 
-        document.getElementById('contiv').remove();
-        document.getElementById('vivev').remove();
+        document.getElementById('contiv').id = ('adjhw');
+        document.getElementById('vivev').id = ('adjhw');
+        nulo.remove();
     }, 32800);
     setTimeout(function(){
         opostos.id = ('opostosv');
         confunde.id = ('confundev');
         t8.classList.add('texto8');
 
-        document.getElementById('partev').remove();
-        document.getElementById('esquecev').remove();
+        document.getElementById('partev').id = ('adjhw');
+        document.getElementById('esquecev').id = ('adjhw');
+        nulo.remove();
     }, 37000);
     setTimeout(function(){
         duvida.id = ('duvidav');
@@ -223,41 +221,46 @@ button.addEventListener('click', () => {
         atitude.id = ('atitudev');
         t9.classList.add('texto9');
 
-        document.getElementById('jav').remove();
-        document.getElementById('iludiv').remove();
+        document.getElementById('jav').id = ('adjhw');
+        document.getElementById('iludiv').id = ('adjhw');
+        nulo.remove();
     }, 41500);
     setTimeout(function(){
         hoje.id = ('hojev');
         algo.id = ('algov');
         t10.classList.add('texto10');
 
-        document.getElementById('opostosv').remove();
-        document.getElementById('confundev').remove();
+        document.getElementById('opostosv').id = ('adjhw');
+        document.getElementById('confundev').id = ('adjhw');
+        nulo.remove();
     }, 46500);
     setTimeout(function(){
         desistir.id = ('desistirv');
         prosseguir.id = ('prosseguirv');
         t11.classList.add('texto11');
 
-        document.getElementById('duvidav').remove();
-        document.getElementById('causouv').remove();
-        document.getElementById('atitudev').remove();
+        document.getElementById('duvidav').id = ('adjhw');
+        document.getElementById('causouv').id = ('adjhw');
+        document.getElementById('atitudev').id = ('adjhw');
+        nulo.remove();
     }, 51000);
     setTimeout(function(){
         site.id = ('sitev');
         alcance.id = ('alcancev');
         t12.classList.add('texto12');
 
-        document.getElementById('hojev').remove();
-        document.getElementById('algov').remove();
+        document.getElementById('hojev').id = ('adjhw');
+        document.getElementById('algov').id = ('adjhw');
+        nulo.remove();
     }, 55500);
     setTimeout(function(){
         forma.id = ('formav');
         incrivel.id = ('incrivelv');
         t13.classList.add('texto13');
 
-        document.getElementById('desistirv').remove();
-        document.getElementById('prosseguirv').remove();
+        document.getElementById('desistirv').id = ('adjhw');
+        document.getElementById('prosseguirv').id = ('adjhw');
+        nulo.remove();
     }, 60000);
     setTimeout(function(){
         talvez.id = ('talvezv');
@@ -266,16 +269,18 @@ button.addEventListener('click', () => {
         alguem.id = ('alguemv');
         t14.classList.add('texto14');
 
-        document.getElementById('sitev').remove();
-        document.getElementById('alcancev').remove();
+        document.getElementById('sitev').id = ('adjhw');
+        document.getElementById('alcancev').id = ('adjhw');
+        nulo.remove();
     }, 65000);
     setTimeout(function(){
         pessoa.id = ('pessoav');
         especial.id = ('especialv');
         t15.classList.add('texto15');
 
-        document.getElementById('formav').remove();
-        document.getElementById('incrivelv').remove();
+        document.getElementById('formav').id = ('adjhw');
+        document.getElementById('incrivelv').id = ('adjhw');
+        nulo.remove();
     }, 70200);
     setTimeout(function(){
         certeza.id = ('certezav');
@@ -284,10 +289,11 @@ button.addEventListener('click', () => {
         vida.id = ('vidav');
         t16.classList.add('texto16');
 
-        document.getElementById('talvezv').remove();
-        document.getElementById('achov').remove();
-        document.getElementById('tempov').remove();
-        document.getElementById('alguemv').remove();
+        document.getElementById('talvezv').id = ('adjhw');
+        document.getElementById('achov').id = ('adjhw');
+        document.getElementById('tempov').id = ('adjhw');
+        document.getElementById('alguemv').id = ('adjhw');
+        nulo.remove();
     }, 75500)
     setTimeout(function(){
         mais.id = ('maisv');
@@ -295,8 +301,9 @@ button.addEventListener('click', () => {
         razao.id = ('razaov');
         t17.classList.add('texto17'); 
 
-        document.getElementById('pessoav').remove();
-        document.getElementById('especialv').remove();
+        document.getElementById('pessoav').id = ('adjhw');
+        document.getElementById('especialv').id = ('adjhw');
+        nulo.remove();
     }, 81000);
     setTimeout(function(){
         capaz.id = ('capazv');
@@ -304,28 +311,31 @@ button.addEventListener('click', () => {
         sentimento.id = ('sentimentov');
         t18.classList.add('texto18');
         
-        document.getElementById('certezav').remove();
-        document.getElementById('importantev').remove();
-        document.getElementById('episodiov').remove();
-        document.getElementById('vidav').remove();
+        document.getElementById('certezav').id = ('adjhw');
+        document.getElementById('importantev').id = ('adjhw');
+        document.getElementById('episodiov').id = ('adjhw');
+        document.getElementById('vidav').id = ('adjhw');
+        nulo.remove();
     }, 86000);
     setTimeout(function(){
         montei.id = ('monteiv');
         todo.id = ('todov');
         t19.classList.add('texto19');
         
-        document.getElementById('maisv').remove();
-        document.getElementById('romancev').remove();
-        document.getElementById('razaov').remove();
+        document.getElementById('maisv').id = ('adjhw');
+        document.getElementById('romancev').id = ('adjhw');
+        document.getElementById('razaov').id = ('adjhw');
+        nulo.remove();
     }, 90500);
     setTimeout(function(){
         intencao.id = ('intencaov');
         declarar.id = ('declararv');
         t20.classList.add('texto20');
 
-        document.getElementById('capazv').remove();
-        document.getElementById('existev').remove();
-        document.getElementById('sentimentov').remove();
+        document.getElementById('capazv').id = ('adjhw');
+        document.getElementById('existev').id = ('adjhw');
+        document.getElementById('sentimentov').id = ('adjhw');
+        nulo.remove();
     }, 95000);
     setTimeout(function(){
         afinal.id = ('afinalv');
@@ -333,8 +343,9 @@ button.addEventListener('click', () => {
         sinto.id = ('sintov');
         t21.classList.add('texto21');
 
-        document.getElementById('monteiv').remove();
-        document.getElementById('todov').remove();
+        document.getElementById('monteiv').id = ('adjhw');
+        document.getElementById('todov').id = ('adjhw');
+        nulo.remove();
     }, 99000);
     setTimeout(function(){
         desse.id = ('dessev');
@@ -342,32 +353,36 @@ button.addEventListener('click', () => {
         lembra.id = ('lembrav');
         t22.classList.add('texto22');
 
-        document.getElementById('intencaov').remove();
-        document.getElementById('declararv').remove();
+        document.getElementById('intencaov').id = ('adjhw');
+        document.getElementById('declararv').id = ('adjhw');
+        nulo.remove();
     }, 104000);
     setTimeout(function(){
         voce.id = ('vocev');
         agatha.id = ('agathav');
         t23.classList.add('texto23');
 
-        document.getElementById('afinalv').remove();
-        document.getElementById('palavrav').remove();
-        document.getElementById('sintov').remove();
+        document.getElementById('afinalv').id = ('adjhw');
+        document.getElementById('palavrav').id = ('adjhw');
+        document.getElementById('sintov').id = ('adjhw');
+        nulo.remove();
     }, 109000);
     setTimeout(function(){
         deixe.id = ('deixev');
         contrario.id = ('contrariov');
         t24.classList.add('texto24');
 
-        document.getElementById('dessev').remove();
-        document.getElementById('agradecev').remove();
-        document.getElementById('lembrav').remove();
+        document.getElementById('dessev').id = ('adjhw');
+        document.getElementById('agradecev').id = ('adjhw');
+        document.getElementById('lembrav').id = ('adjhw');
+        nulo.remove();
     }, 114000);
     setTimeout(function(){
         preto.id = ('pretov');
 
-        document.getElementById('vocev').remove();
-        document.getElementById('agathav').remove();
+        document.getElementById('vocev').id = ('adjhw');
+        document.getElementById('agathav').id = ('adjhw');
+        nulo.remove();
     }, 118000);
 
     button.classList.remove('antes');
