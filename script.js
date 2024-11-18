@@ -133,16 +133,27 @@ button.addEventListener('click', () => {
         estrela3.id = ('estrela13');
 
         panda.remove();
+        panda.style.animation = 'none';
         pata.remove();
+        pata.style.animation = 'none';
         bambu1.remove();
+        bambu1.style.animation = 'none';
         bambu2.remove();
+        bambu2.style.animation = 'none';
         bambu3.remove();
+        bambu3.style.animation = 'none';
         bolas.remove();
+        bolas.style.animation = 'none';
         degrade.remove();
+        degrade.style.animation = 'none';
         triangulo1.remove();
+        triangulo1.style.animation = 'none';
         triangulo2.remove();
+        triangulo2.style.animation = 'none';
         triangulo3.remove();
+        triangulo3.style.animation = 'none';
         triangulo4.remove();
+        triangulo4.style.animation = 'none';
     }, 1500);
     setTimeout(function(){
         amor.id = ('amorv');
